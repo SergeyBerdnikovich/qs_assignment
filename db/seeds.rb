@@ -1,0 +1,1 @@
+Facility.create(user: 'DevUser', password: 'DevPass', site: 'QuikStorStorage')
