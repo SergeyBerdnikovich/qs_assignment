@@ -1,6 +1,10 @@
+<% flash.each do |key, value| %>
+  <div class="alert alert-<%= key %>"><%= value %></div>
+<% end %>
+
 <h3>Facilities</h3>
 
 <% @facilities.each do |facility| %>
   <p><%= facility.site %></p>
-  <p><%= link_to('Synchronize', new_facility_synchronization_path(facility)) %>
+  <p><%= link_to('Synchronize', new_facility_synchronization_path(facility)) %></p>
 <% end %>
