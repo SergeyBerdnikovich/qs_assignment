@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://sc.quikstor.com/eComm3ServiceSS/QuikStorWebServiceSS.asmx
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Body><tns:HelloWorldPassword><tns:csUser>incorrect
+        user name</tns:csUser><tns:csPassword>DevPass</tns:csPassword><tns:csSiteName>QuikStorStorage</tns:csSiteName></tns:HelloWorldPassword></env:Body></env:Envelope>
+    headers:
+      Soapaction:
+      - '"http://tempuri.org/HelloWorldPassword"'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Content-Length:
+      - '454'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - text/xml; charset=utf-8
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Fri, 17 Nov 2017 17:04:10 GMT
+      Content-Length:
+      - '394'
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><HelloWorldPasswordResponse
+        xmlns="http://tempuri.org/"><HelloWorldPasswordResult>Wrong Pass</HelloWorldPasswordResult></HelloWorldPasswordResponse></soap:Body></soap:Envelope>
+    http_version: 
+  recorded_at: Fri, 17 Nov 2017 17:04:13 GMT
+recorded_with: VCR 3.0.3

@@ -1,0 +1,882 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://sc.quikstor.com/eComm3ServiceSS/QuikStorWebServiceSS.asmx
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Body><tns:HelloWorldPassword><tns:csUser>DevUser</tns:csUser><tns:csPassword>DevPass</tns:csPassword><tns:csSiteName>QuikStorStorage</tns:csSiteName></tns:HelloWorldPassword></env:Body></env:Envelope>
+    headers:
+      Soapaction:
+      - '"http://tempuri.org/HelloWorldPassword"'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Content-Length:
+      - '442'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - text/xml; charset=utf-8
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Fri, 17 Nov 2017 17:03:46 GMT
+      Content-Length:
+      - '396'
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><HelloWorldPasswordResponse
+        xmlns="http://tempuri.org/"><HelloWorldPasswordResult>Hello World </HelloWorldPasswordResult></HelloWorldPasswordResponse></soap:Body></soap:Envelope>
+    http_version: 
+  recorded_at: Fri, 17 Nov 2017 17:03:48 GMT
+- request:
+    method: post
+    uri: http://sc.quikstor.com/eComm3ServiceSS/QuikStorWebServiceSS.asmx
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Body><tns:FacilityInfo><tns:csUser>DevUser</tns:csUser><tns:csPassword>DevPass</tns:csPassword><tns:csSiteName>QuikStorStorage</tns:csSiteName></tns:FacilityInfo></env:Body></env:Envelope>
+    headers:
+      Soapaction:
+      - '"http://tempuri.org/FacilityInfo"'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Content-Length:
+      - '430'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - text/xml; charset=utf-8
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Fri, 17 Nov 2017 17:03:46 GMT
+      Content-Length:
+      - '1283'
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><FacilityInfoResponse
+        xmlns="http://tempuri.org/"><FacilityInfoResult><Success>true</Success><csSiteName>QuikStor
+        Storage</csSiteName><csSiteAddress>6613 Valjean Ave</csSiteAddress><csSiteCity>Van
+        Nuys</csSiteCity><csSiteState>CA</csSiteState><csSiteZip>91406</csSiteZip><csSitePhone>800-321-1987</csSitePhone><csSiteEmail>sales@quikstor.com</csSiteEmail><csSMTPName>mail.quikstor.com</csSMTPName><csSMTPUser>ecomdemo</csSMTPUser><csSMTPPassword>qu1kst0r</csSMTPPassword><csSMTPNeedAuth>1</csSMTPNeedAuth><csAllowPaymentOneWeekBeforeAuction>999</csAllowPaymentOneWeekBeforeAuction><csAllowRentUnit>1</csAllowRentUnit><csAllowReserve>1</csAllowReserve><csAllowEditTenantInfo>1</csAllowEditTenantInfo><csAdvertising>N</csAdvertising><iAdvertisingDays>0</iAdvertisingDays><csSMTPPort>25</csSMTPPort><csSMTPSecureLogOn>false</csSMTPSecureLogOn><ST_ProcessorInfo><csProcessor>CISPPnP</csProcessor><csUserName>quikstorde</csUserName><csPassword>XXXX</csPassword><csPropertyCode
+        /></ST_ProcessorInfo></FacilityInfoResult></FacilityInfoResponse></soap:Body></soap:Envelope>
+    http_version: 
+  recorded_at: Fri, 17 Nov 2017 17:03:48 GMT
+- request:
+    method: post
+    uri: http://sc.quikstor.com/eComm3ServiceSS/QuikStorWebServiceSS.asmx
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Body><tns:AvailableUnitTypes><tns:csUser>DevUser</tns:csUser><tns:csPassword>DevPass</tns:csPassword><tns:csSiteName>QuikStorStorage</tns:csSiteName></tns:AvailableUnitTypes></env:Body></env:Envelope>
+    headers:
+      Soapaction:
+      - '"http://tempuri.org/AvailableUnitTypes"'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Content-Length:
+      - '442'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - text/xml; charset=utf-8
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Fri, 17 Nov 2017 17:03:47 GMT
+      Content-Length:
+      - '3477'
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><AvailableUnitTypesResponse
+        xmlns="http://tempuri.org/"><AvailableUnitTypesResult><AvailableUnitTypes_ST><iTypeId>6</iTypeId><csTypeDescription>12
+        x 25, None door,15' high  1 Floor</csTypeDescription><dPrice>55</dPrice><Availability>0</Availability><csLastUnit
+        /></AvailableUnitTypes_ST><AvailableUnitTypes_ST><iTypeId>7</iTypeId><csTypeDescription>5
+        x 5, Swing door,8' high  1 Floor</csTypeDescription><dPrice>40</dPrice><Availability>0</Availability><csLastUnit
+        /></AvailableUnitTypes_ST><AvailableUnitTypes_ST><iTypeId>8</iTypeId><csTypeDescription>6
+        x 6, Swing door,8' high  1 Floor</csTypeDescription><dPrice>50</dPrice><Availability>0</Availability><csLastUnit
+        /></AvailableUnitTypes_ST><AvailableUnitTypes_ST><iTypeId>9</iTypeId><csTypeDescription>5
+        x 10, Swing door,8' high  1 Floor</csTypeDescription><dPrice>56</dPrice><Availability>0</Availability><csLastUnit
+        /></AvailableUnitTypes_ST><AvailableUnitTypes_ST><iTypeId>10</iTypeId><csTypeDescription>6
+        x 12, Swing door,8' high  1 Floor</csTypeDescription><dPrice>70</dPrice><Availability>0</Availability><csLastUnit
+        /></AvailableUnitTypes_ST><AvailableUnitTypes_ST><iTypeId>11</iTypeId><csTypeDescription>6
+        x 12, Swing door,8' high  1 Floor</csTypeDescription><dPrice>53</dPrice><Availability>0</Availability><csLastUnit
+        /></AvailableUnitTypes_ST><AvailableUnitTypes_ST><iTypeId>12</iTypeId><csTypeDescription>10
+        x 10, Swing door,8' high  1 Floor</csTypeDescription><dPrice>64</dPrice><Availability>0</Availability><csLastUnit
+        /></AvailableUnitTypes_ST><AvailableUnitTypes_ST><iTypeId>13</iTypeId><csTypeDescription>12
+        x 12, Swing door,8' high  1 Floor</csTypeDescription><dPrice>90</dPrice><Availability>0</Availability><csLastUnit
+        /></AvailableUnitTypes_ST><AvailableUnitTypes_ST><iTypeId>14</iTypeId><csTypeDescription>12
+        x 12, Swing door,8' high  1 Floor</csTypeDescription><dPrice>74</dPrice><Availability>0</Availability><csLastUnit
+        /></AvailableUnitTypes_ST><AvailableUnitTypes_ST><iTypeId>15</iTypeId><csTypeDescription>10
+        x 20, Rollup door,8' high  1 Floor</csTypeDescription><dPrice>110</dPrice><Availability>0</Availability><csLastUnit
+        /></AvailableUnitTypes_ST><AvailableUnitTypes_ST><iTypeId>16</iTypeId><csTypeDescription>12
+        x 18, Swing door,8' high  1 Floor</csTypeDescription><dPrice>120</dPrice><Availability>0</Availability><csLastUnit
+        /></AvailableUnitTypes_ST><AvailableUnitTypes_ST><iTypeId>17</iTypeId><csTypeDescription>12
+        x 24, Swing door,8' high  1 Floor</csTypeDescription><dPrice>140</dPrice><Availability>0</Availability><csLastUnit
+        /></AvailableUnitTypes_ST><AvailableUnitTypes_ST><iTypeId>18</iTypeId><csTypeDescription>12
+        x 24, Rollup door,8' high  1 Floor</csTypeDescription><dPrice>120</dPrice><Availability>0</Availability><csLastUnit
+        /></AvailableUnitTypes_ST><AvailableUnitTypes_ST><iTypeId>19</iTypeId><csTypeDescription>12
+        x 36, Rollup door,13' high  1 Floor</csTypeDescription><dPrice>85</dPrice><Availability>0</Availability><csLastUnit
+        /></AvailableUnitTypes_ST><AvailableUnitTypes_ST><iTypeId>1000001</iTypeId><csTypeDescription>7
+        x 7, Other door,7' high  1 Floor</csTypeDescription><dPrice>77.25</dPrice><Availability>0</Availability><csLastUnit
+        /></AvailableUnitTypes_ST></AvailableUnitTypesResult></AvailableUnitTypesResponse></soap:Body></soap:Envelope>
+    http_version: 
+  recorded_at: Fri, 17 Nov 2017 17:03:49 GMT
+- request:
+    method: post
+    uri: http://sc.quikstor.com/eComm3ServiceSS/QuikStorWebServiceSS.asmx
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Body><tns:AvailableUnits><tns:csUser>DevUser</tns:csUser><tns:csPassword>DevPass</tns:csPassword><tns:csSiteName>QuikStorStorage</tns:csSiteName><tns:iTypeID>6</tns:iTypeID></tns:AvailableUnits></env:Body></env:Envelope>
+    headers:
+      Soapaction:
+      - '"http://tempuri.org/AvailableUnits"'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Content-Length:
+      - '462'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - text/xml; charset=utf-8
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Fri, 17 Nov 2017 17:03:47 GMT
+      Content-Length:
+      - '300'
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><AvailableUnitsResponse
+        xmlns="http://tempuri.org/" /></soap:Body></soap:Envelope>
+    http_version: 
+  recorded_at: Fri, 17 Nov 2017 17:03:50 GMT
+- request:
+    method: post
+    uri: http://sc.quikstor.com/eComm3ServiceSS/QuikStorWebServiceSS.asmx
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Body><tns:AvailableUnits><tns:csUser>DevUser</tns:csUser><tns:csPassword>DevPass</tns:csPassword><tns:csSiteName>QuikStorStorage</tns:csSiteName><tns:iTypeID>7</tns:iTypeID></tns:AvailableUnits></env:Body></env:Envelope>
+    headers:
+      Soapaction:
+      - '"http://tempuri.org/AvailableUnits"'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Content-Length:
+      - '462'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - text/xml; charset=utf-8
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Fri, 17 Nov 2017 17:03:48 GMT
+      Content-Length:
+      - '300'
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><AvailableUnitsResponse
+        xmlns="http://tempuri.org/" /></soap:Body></soap:Envelope>
+    http_version: 
+  recorded_at: Fri, 17 Nov 2017 17:03:50 GMT
+- request:
+    method: post
+    uri: http://sc.quikstor.com/eComm3ServiceSS/QuikStorWebServiceSS.asmx
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Body><tns:AvailableUnits><tns:csUser>DevUser</tns:csUser><tns:csPassword>DevPass</tns:csPassword><tns:csSiteName>QuikStorStorage</tns:csSiteName><tns:iTypeID>8</tns:iTypeID></tns:AvailableUnits></env:Body></env:Envelope>
+    headers:
+      Soapaction:
+      - '"http://tempuri.org/AvailableUnits"'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Content-Length:
+      - '462'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - text/xml; charset=utf-8
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Fri, 17 Nov 2017 17:03:48 GMT
+      Content-Length:
+      - '300'
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><AvailableUnitsResponse
+        xmlns="http://tempuri.org/" /></soap:Body></soap:Envelope>
+    http_version: 
+  recorded_at: Fri, 17 Nov 2017 17:03:50 GMT
+- request:
+    method: post
+    uri: http://sc.quikstor.com/eComm3ServiceSS/QuikStorWebServiceSS.asmx
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Body><tns:AvailableUnits><tns:csUser>DevUser</tns:csUser><tns:csPassword>DevPass</tns:csPassword><tns:csSiteName>QuikStorStorage</tns:csSiteName><tns:iTypeID>9</tns:iTypeID></tns:AvailableUnits></env:Body></env:Envelope>
+    headers:
+      Soapaction:
+      - '"http://tempuri.org/AvailableUnits"'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Content-Length:
+      - '462'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - text/xml; charset=utf-8
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Fri, 17 Nov 2017 17:03:48 GMT
+      Content-Length:
+      - '300'
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><AvailableUnitsResponse
+        xmlns="http://tempuri.org/" /></soap:Body></soap:Envelope>
+    http_version: 
+  recorded_at: Fri, 17 Nov 2017 17:03:51 GMT
+- request:
+    method: post
+    uri: http://sc.quikstor.com/eComm3ServiceSS/QuikStorWebServiceSS.asmx
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Body><tns:AvailableUnits><tns:csUser>DevUser</tns:csUser><tns:csPassword>DevPass</tns:csPassword><tns:csSiteName>QuikStorStorage</tns:csSiteName><tns:iTypeID>10</tns:iTypeID></tns:AvailableUnits></env:Body></env:Envelope>
+    headers:
+      Soapaction:
+      - '"http://tempuri.org/AvailableUnits"'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Content-Length:
+      - '463'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - text/xml; charset=utf-8
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Fri, 17 Nov 2017 17:03:49 GMT
+      Content-Length:
+      - '448'
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><AvailableUnitsResponse
+        xmlns="http://tempuri.org/"><AvailableUnitsResult><AvailableUnits_ST><csUnitID>H35</csUnitID><dRent>70</dRent></AvailableUnits_ST></AvailableUnitsResult></AvailableUnitsResponse></soap:Body></soap:Envelope>
+    http_version: 
+  recorded_at: Fri, 17 Nov 2017 17:03:51 GMT
+- request:
+    method: post
+    uri: http://sc.quikstor.com/eComm3ServiceSS/QuikStorWebServiceSS.asmx
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Body><tns:AvailableUnits><tns:csUser>DevUser</tns:csUser><tns:csPassword>DevPass</tns:csPassword><tns:csSiteName>QuikStorStorage</tns:csSiteName><tns:iTypeID>11</tns:iTypeID></tns:AvailableUnits></env:Body></env:Envelope>
+    headers:
+      Soapaction:
+      - '"http://tempuri.org/AvailableUnits"'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Content-Length:
+      - '463'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - text/xml; charset=utf-8
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Fri, 17 Nov 2017 17:03:49 GMT
+      Content-Length:
+      - '688'
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><AvailableUnitsResponse
+        xmlns="http://tempuri.org/"><AvailableUnitsResult><AvailableUnits_ST><csUnitID>F02</csUnitID><dRent>53</dRent></AvailableUnits_ST><AvailableUnits_ST><csUnitID>F03</csUnitID><dRent>53</dRent></AvailableUnits_ST><AvailableUnits_ST><csUnitID>F08</csUnitID><dRent>53</dRent></AvailableUnits_ST><AvailableUnits_ST><csUnitID>F12</csUnitID><dRent>53</dRent></AvailableUnits_ST></AvailableUnitsResult></AvailableUnitsResponse></soap:Body></soap:Envelope>
+    http_version: 
+  recorded_at: Fri, 17 Nov 2017 17:03:52 GMT
+- request:
+    method: post
+    uri: http://sc.quikstor.com/eComm3ServiceSS/QuikStorWebServiceSS.asmx
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Body><tns:AvailableUnits><tns:csUser>DevUser</tns:csUser><tns:csPassword>DevPass</tns:csPassword><tns:csSiteName>QuikStorStorage</tns:csSiteName><tns:iTypeID>12</tns:iTypeID></tns:AvailableUnits></env:Body></env:Envelope>
+    headers:
+      Soapaction:
+      - '"http://tempuri.org/AvailableUnits"'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Content-Length:
+      - '463'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - text/xml; charset=utf-8
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Fri, 17 Nov 2017 17:03:50 GMT
+      Content-Length:
+      - '300'
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><AvailableUnitsResponse
+        xmlns="http://tempuri.org/" /></soap:Body></soap:Envelope>
+    http_version: 
+  recorded_at: Fri, 17 Nov 2017 17:03:52 GMT
+- request:
+    method: post
+    uri: http://sc.quikstor.com/eComm3ServiceSS/QuikStorWebServiceSS.asmx
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Body><tns:AvailableUnits><tns:csUser>DevUser</tns:csUser><tns:csPassword>DevPass</tns:csPassword><tns:csSiteName>QuikStorStorage</tns:csSiteName><tns:iTypeID>13</tns:iTypeID></tns:AvailableUnits></env:Body></env:Envelope>
+    headers:
+      Soapaction:
+      - '"http://tempuri.org/AvailableUnits"'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Content-Length:
+      - '463'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - text/xml; charset=utf-8
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Fri, 17 Nov 2017 17:03:50 GMT
+      Content-Length:
+      - '300'
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><AvailableUnitsResponse
+        xmlns="http://tempuri.org/" /></soap:Body></soap:Envelope>
+    http_version: 
+  recorded_at: Fri, 17 Nov 2017 17:03:53 GMT
+- request:
+    method: post
+    uri: http://sc.quikstor.com/eComm3ServiceSS/QuikStorWebServiceSS.asmx
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Body><tns:AvailableUnits><tns:csUser>DevUser</tns:csUser><tns:csPassword>DevPass</tns:csPassword><tns:csSiteName>QuikStorStorage</tns:csSiteName><tns:iTypeID>14</tns:iTypeID></tns:AvailableUnits></env:Body></env:Envelope>
+    headers:
+      Soapaction:
+      - '"http://tempuri.org/AvailableUnits"'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Content-Length:
+      - '463'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - text/xml; charset=utf-8
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Fri, 17 Nov 2017 17:03:50 GMT
+      Content-Length:
+      - '300'
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><AvailableUnitsResponse
+        xmlns="http://tempuri.org/" /></soap:Body></soap:Envelope>
+    http_version: 
+  recorded_at: Fri, 17 Nov 2017 17:03:53 GMT
+- request:
+    method: post
+    uri: http://sc.quikstor.com/eComm3ServiceSS/QuikStorWebServiceSS.asmx
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Body><tns:AvailableUnits><tns:csUser>DevUser</tns:csUser><tns:csPassword>DevPass</tns:csPassword><tns:csSiteName>QuikStorStorage</tns:csSiteName><tns:iTypeID>15</tns:iTypeID></tns:AvailableUnits></env:Body></env:Envelope>
+    headers:
+      Soapaction:
+      - '"http://tempuri.org/AvailableUnits"'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Content-Length:
+      - '463'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - text/xml; charset=utf-8
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Fri, 17 Nov 2017 17:03:51 GMT
+      Content-Length:
+      - '300'
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><AvailableUnitsResponse
+        xmlns="http://tempuri.org/" /></soap:Body></soap:Envelope>
+    http_version: 
+  recorded_at: Fri, 17 Nov 2017 17:03:54 GMT
+- request:
+    method: post
+    uri: http://sc.quikstor.com/eComm3ServiceSS/QuikStorWebServiceSS.asmx
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Body><tns:AvailableUnits><tns:csUser>DevUser</tns:csUser><tns:csPassword>DevPass</tns:csPassword><tns:csSiteName>QuikStorStorage</tns:csSiteName><tns:iTypeID>16</tns:iTypeID></tns:AvailableUnits></env:Body></env:Envelope>
+    headers:
+      Soapaction:
+      - '"http://tempuri.org/AvailableUnits"'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Content-Length:
+      - '463'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - text/xml; charset=utf-8
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Fri, 17 Nov 2017 17:03:51 GMT
+      Content-Length:
+      - '300'
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><AvailableUnitsResponse
+        xmlns="http://tempuri.org/" /></soap:Body></soap:Envelope>
+    http_version: 
+  recorded_at: Fri, 17 Nov 2017 17:03:54 GMT
+- request:
+    method: post
+    uri: http://sc.quikstor.com/eComm3ServiceSS/QuikStorWebServiceSS.asmx
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Body><tns:AvailableUnits><tns:csUser>DevUser</tns:csUser><tns:csPassword>DevPass</tns:csPassword><tns:csSiteName>QuikStorStorage</tns:csSiteName><tns:iTypeID>17</tns:iTypeID></tns:AvailableUnits></env:Body></env:Envelope>
+    headers:
+      Soapaction:
+      - '"http://tempuri.org/AvailableUnits"'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Content-Length:
+      - '463'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - text/xml; charset=utf-8
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Fri, 17 Nov 2017 17:03:52 GMT
+      Content-Length:
+      - '300'
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><AvailableUnitsResponse
+        xmlns="http://tempuri.org/" /></soap:Body></soap:Envelope>
+    http_version: 
+  recorded_at: Fri, 17 Nov 2017 17:03:55 GMT
+- request:
+    method: post
+    uri: http://sc.quikstor.com/eComm3ServiceSS/QuikStorWebServiceSS.asmx
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Body><tns:AvailableUnits><tns:csUser>DevUser</tns:csUser><tns:csPassword>DevPass</tns:csPassword><tns:csSiteName>QuikStorStorage</tns:csSiteName><tns:iTypeID>18</tns:iTypeID></tns:AvailableUnits></env:Body></env:Envelope>
+    headers:
+      Soapaction:
+      - '"http://tempuri.org/AvailableUnits"'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Content-Length:
+      - '463'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - text/xml; charset=utf-8
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Fri, 17 Nov 2017 17:03:52 GMT
+      Content-Length:
+      - '611'
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><AvailableUnitsResponse
+        xmlns="http://tempuri.org/"><AvailableUnitsResult><AvailableUnits_ST><csUnitID>G01</csUnitID><dRent>120</dRent></AvailableUnits_ST><AvailableUnits_ST><csUnitID>G10</csUnitID><dRent>120</dRent></AvailableUnits_ST><AvailableUnits_ST><csUnitID>G12</csUnitID><dRent>120</dRent></AvailableUnits_ST></AvailableUnitsResult></AvailableUnitsResponse></soap:Body></soap:Envelope>
+    http_version: 
+  recorded_at: Fri, 17 Nov 2017 17:03:55 GMT
+- request:
+    method: post
+    uri: http://sc.quikstor.com/eComm3ServiceSS/QuikStorWebServiceSS.asmx
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Body><tns:AvailableUnits><tns:csUser>DevUser</tns:csUser><tns:csPassword>DevPass</tns:csPassword><tns:csSiteName>QuikStorStorage</tns:csSiteName><tns:iTypeID>19</tns:iTypeID></tns:AvailableUnits></env:Body></env:Envelope>
+    headers:
+      Soapaction:
+      - '"http://tempuri.org/AvailableUnits"'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Content-Length:
+      - '463'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - text/xml; charset=utf-8
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Fri, 17 Nov 2017 17:03:52 GMT
+      Content-Length:
+      - '300'
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><AvailableUnitsResponse
+        xmlns="http://tempuri.org/" /></soap:Body></soap:Envelope>
+    http_version: 
+  recorded_at: Fri, 17 Nov 2017 17:03:55 GMT
+- request:
+    method: post
+    uri: http://sc.quikstor.com/eComm3ServiceSS/QuikStorWebServiceSS.asmx
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://tempuri.org/"
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Body><tns:AvailableUnits><tns:csUser>DevUser</tns:csUser><tns:csPassword>DevPass</tns:csPassword><tns:csSiteName>QuikStorStorage</tns:csSiteName><tns:iTypeID>1000001</tns:iTypeID></tns:AvailableUnits></env:Body></env:Envelope>
+    headers:
+      Soapaction:
+      - '"http://tempuri.org/AvailableUnits"'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Content-Length:
+      - '468'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0
+      Content-Type:
+      - text/xml; charset=utf-8
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Fri, 17 Nov 2017 17:03:53 GMT
+      Content-Length:
+      - '300'
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><AvailableUnitsResponse
+        xmlns="http://tempuri.org/" /></soap:Body></soap:Envelope>
+    http_version: 
+  recorded_at: Fri, 17 Nov 2017 17:03:56 GMT
+recorded_with: VCR 3.0.3
